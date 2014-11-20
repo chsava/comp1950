@@ -1,0 +1,585 @@
+ <h1 class="page-title">Week Two</h1>
+  <h1 id="agenda">Agenda</h1>
+
+<ul>
+  <li>Last week - missed a few things</li>
+  <li>Web review: some reminders</li>
+  <li>Homework review</li>
+  <li>Web Development with Firefox, Chrome and Safari</li>
+  <li>Standards &amp; Semantics</li>
+  <li>Markup Languages</li>
+  <li>Assignment &amp; Homework</li>
+</ul>
+
+<h2 id="web-review-reminders">Web review: reminders</h2>
+
+<p>There are a few things that bear reminding:</p>
+
+<ul>
+  <li>file and folder names cannot contain:</li>
+  <li>capital letters</li>
+  <li>spaces</li>
+  <li>special characters:</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="err">!</span> <span class="err">@</span> <span class="c"># $ % ^ &amp; * ( ) + { } [ ] : ; &quot; &lt; &gt; ? |</span></code></pre></div>
+
+<ul>
+  <li>acceptable non-alphanumeric characters: . _ - ~</li>
+  <li>default page: index.htm, index.html or index.shtml (or whatever your server default is)</li>
+</ul>
+
+<h2 id="homework-review">Homework review</h2>
+
+<p>As this is a web development course, let’s talk a bit about coding patterns &amp; behaviour.</p>
+
+<h3 id="comments">Comments</h3>
+
+<p>Comments in your code are great! For you, anyone you work with or anyone looking at your site, both today and especially <em>in the future</em>.</p>
+
+<ul>
+  <li>Code should tell the story, comments are just additional notes. Be brief!</li>
+  <li>Use tags to help you out</li>
+  <li>Minimize the amount you comment on</li>
+  <li>Opening tags unnecessary</li>
+</ul>
+
+<h2 id="browser-tools">Browser Tools</h2>
+
+<h3 id="lots-of-options">Lots of options</h3>
+
+<p>These days there are lots of browser-based tools available for web developers. Initially, Mozilla (Firefox) built in some basic tools and their plug-ins centered around web development.</p>
+
+<p>Now, Webkit (Chrome, Safari) and Mozilla (Firefox) have excellent tools built-in. Some need to be “turned on” but others are built in by default.</p>
+
+<p>The tools are enhanced by their organizations and are ever-increasing in capability and what they can do.</p>
+
+<p><em>Do not underestimate how powerful these tools can be!</em> I can guarantee these tools will get you out of trouble, or solve a problem you didn’t even know you had.</p>
+
+<h3 id="what-kinds-of-things-do-these-tools-help-you-with">What kinds of things do these tools help you with?</h3>
+
+<ul>
+  <li>Checking validity of your code</li>
+  <li>See errors in rendering</li>
+  <li>Use the console for Javascript output (remember to code your error throwing!)</li>
+  <li>Slow loading resources</li>
+  <li>Large resources</li>
+  <li>External bottlenecks</li>
+  <li>Rendering issues</li>
+  <li>… much more!</li>
+</ul>
+
+<p class="message">While we will look at Chrome and Safari, the focus will be Firefox in COMP1950 so that we are all working from the same platform.</p>
+
+<p><strong>Remember</strong>: to check in all browsers when taking a look at your site for production.</p>
+
+<h2 id="why-use-firefox">Why Use Firefox?</h2>
+
+<p>I like to use Firefox, Chrome and Safari for my web development but, for this course, we will standardize on Firefox.</p>
+
+<h3 id="benefits">Benefits</h3>
+<ul>
+  <li>Originally created by web developers for web developers</li>
+  <li>Extremely standards compliant</li>
+  <li>Uses a superb page-rendering engine (Gecko)</li>
+  <li>Frequent updates to address developments in web technology</li>
+  <li>Built-in tools are excellent</li>
+  <li>Excellent selection of extensions</li>
+</ul>
+
+<h3 id="challenges">Challenges</h3>
+
+<ul>
+  <li>Can become heavy under it’s own weight: extensions &amp; add-ons</li>
+  <li>Frequent updates means more to test on</li>
+  <li>Not associated with a corporate entity means code decisions can sometimes be very arbitrary</li>
+</ul>
+
+<h3 id="considerations">Considerations</h3>
+
+<ul>
+  <li>Remember that there are other browsers out there!</li>
+  <li>Test in Moz/IE/Opera/FF and anything else just to be sure</li>
+  <li>Built-in tools</li>
+  <li>Starting with the built-in web developer tools:</li>
+</ul>
+
+<h2 id="developer-tools-in-firefox">Developer Tools in Firefox</h2>
+<ul>
+  <li>Includes console, debugger, inspector</li>
+  <li>Also includes multiple view options, ability to include style and even full size screenshots</li>
+  <li>Responsive Design view</li>
+  <li>Scratchpad for JavaScript stuff</li>
+  <li>Separate style editor</li>
+  <li>Some pretty great stuff, but there are other tools out there that offer far more!</li>
+</ul>
+
+<h3 id="extensions">Extensions</h3>
+<p>Extensions are a big part of Firefox. Check out the various tools available in the <a href="https://addons.mozilla.org/en-US/firefox/extensions/web-development/">web development section</a>.</p>
+
+<p>Some of the best tools for Web Developers:</p>
+
+<ul>
+  <li><a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/">Web Developer</a></li>
+  <li><a href="https://addons.mozilla.org/en-US/firefox/addon/firebug/">Firebug</a></li>
+  <li><a href="https://addons.mozilla.org/en-US/firefox/addon/colorzilla/">ColorZilla</a></li>
+</ul>
+
+<h4 id="web-developer-toolbar">Web Developer Toolbar</h4>
+
+<p>This extension to Firefox was one of the original extensions, and offers some amazing tools to web developers:</p>
+
+<ul>
+  <li><strong>Disable styles</strong> - by embedded/linked/inline as well as all styles, or just a single sheet</li>
+  <li><strong>Edit CSS &amp; HTML</strong> - Make live changes to your CSS or HTML</li>
+  <li><strong>Images</strong> - outlining, file sizes, alt information… lots more</li>
+  <li><strong>Analysis tools</strong> - ID &amp; Class details, broken images, many extras</li>
+  <li><strong>Form detail</strong> - useful for working with form elements</li>
+  <li><strong>Built in validators</strong> - HTML and CSS (and sort of JS)</li>
+  <li><strong>Line Guides &amp; Rulers</strong></li>
+</ul>
+
+<h4 id="firebug">Firebug</h4>
+<p>As the web got more complex, the harder it can be to figure out what is going on or what we got right or wrong. Having a diagnostic tool to assist us in developing these behaviours would help. That’s where Firebug comes in.</p>
+
+<p>Firebug is a Firefox extension that makes it easy to examine almost every detail of your web page</p>
+
+<p>While it is similar to the Web Developer Toolbar, it has a different focus with click-access to your HTML and CSS.</p>
+
+<h3 id="tool-review">Tool review</h3>
+
+<p>Firefox was the first browser to have real tools embedded and, with extensions, it’s a real powerhouse now
+The last few years have seen a constant progression of improved tools in other browsers, bringing everything up a significant notch</p>
+
+<h4 id="dev-browser--ok">Dev Browser = OK</h4>
+
+<p>Not a bad idea to have a “dev browser” that can be weighted down with tools</p>
+
+<h3 id="your-dev-tools">Your Dev Tools?</h3>
+<p>So, what do you use? Looks like a lot of people use Notepad++, probably because it is used here.  But you don’t have to!  Find a tool you like and <em>really</em> learn to use it.</p>
+
+<ul>
+  <li>Coda - Web Dev IDE (Mac)</li>
+  <li>Brackets - Text Editor (Mac/Win)</li>
+  <li>Sublime Text - Text Editor (Mac/Win)</li>
+  <li>Dreamweaver - Web Dev IDE (Mac/Win)</li>
+  <li>Cyberduck FTP - FTP tool (Mac)</li>
+  <li>Color Wheel - Colour Selector</li>
+  <li>Notepad++ - Text Editor (Win)</li>
+  <li>Filezilla - FTP tool (Win)</li>
+  <li>Text Wrangler - Text Editor (Mac)</li>
+  <li>HTMLKit - Web Dev IDE (Win)</li>
+  <li>Aptana - Web Dev IDE (Win/Mac)</li>
+  <li>Expression SuperPreview - Browser Previewer</li>
+  <li>Textastic - Web Dev IDE (iPad)</li>
+  <li>Dropbox - File Sharing (Web)</li>
+  <li>Komodo - Web Dev IDE (Mac/Win)</li>
+</ul>
+
+<h3 id="final-word">Final Word</h3>
+<p>Make <strong>SURE</strong> you know how to troubleshoot a page! Not only for the quizzes that will come up, but IRL too!</p>
+
+<h2 id="standards">Standards</h2>
+<p>What are standards? Why are they important?</p>
+
+<h3 id="what-are-some-examples-of-standards-in-real-life">What are some examples of standards in real life?</h3>
+<ul>
+  <li>Lightbulbs</li>
+  <li>Grades of gasoline</li>
+  <li>Train rail widths</li>
+  <li>TV Broadcast signals</li>
+</ul>
+
+<h3 id="why-use-them">Why use them?</h3>
+
+<ul>
+  <li>Interoperability</li>
+  <li>Predictable results/dimensions/values</li>
+  <li>A new specification is not needed for each new manufacturing run</li>
+  <li>Need a new microwave? You can count on:</li>
+  <li>Plug/Voltage/Power</li>
+  <li>Unit size</li>
+  <li>Operation</li>
+</ul>
+
+<h3 id="aging-badly">Aging badly</h3>
+
+<p>When you don’t support standards, you or your clients suffer for it later on.  I’m looking at YOU, IE6!</p>
+
+<h2 id="web-standards">Web Standards</h2>
+
+<p class="message">
+When you build without standards, you are investing in the here and now, without thinking of tomorrow.
+</p>
+
+<p>Standards development works both ways:</p>
+
+<ul>
+  <li>Browser manufacturers need to code to a predictable standard</li>
+  <li>Developers code to the standard they expect within the language (HTML, CSS and JS) for a predictable result</li>
+</ul>
+
+<p>Problems occur when either the browser manufacturers or the develoers stray from the standard.</p>
+
+<h3 id="who-sets-the-standard">Who sets the standard?</h3>
+
+<p>The <a href="http://w3.org">World Wide Web Consortium</a> (W3C) is responsible for maintaining the <a href="http://www.w3.org/standards/">Web Standards</a>, which has a <strong>gigantic</strong> effect on the world.</p>
+
+<h3 id="w3c-goals">W3C Goals</h3>
+
+<!-- Know these goals. I'll as you to name them in the quiz -->
+<ul>
+  <li><strong>Universal Access</strong>: To make the Web accessible to all by promoting technologies that take into account the vast differences in culture, languages, education, ability, material resources, access devices, and physical limitations of users on all continents;</li>
+  <li><strong>Semantic Web</strong>: To develop a software environment that permits each user to make the best use of the resources available on the Web;</li>
+  <li><strong>Web of Trust</strong>: To guide the Web’s development with careful consideration for the novel legal, commercial, and social issues raised by this technology.</li>
+</ul>
+
+<h3 id="do-standards-actually-matter">Do standards actually matter?</h3>
+
+<ul>
+  <li>Your pages will be viewable in the largest number of browsers</li>
+  <li>The largest number of devices will be able to render your pages</li>
+  <li>Will gracefully degrade as support for CSS or other presentation layers are absent</li>
+  <li>Most importantly: <strong>Standards Mode</strong></li>
+</ul>
+
+<h2 id="semantics">Semantics</h2>
+
+<p>Okay, so Standards sound like a good idea, but one of the W3C’s goals is something called <strong>Semantic Web</strong>. What is that about?</p>
+
+<h3 id="semantic-markup">Semantic Markup</h3>
+<p>Semantic markup is simply…</p>
+
+<p class="message">The practice of using HTML tags that convey meaning of the content within</p>
+
+<p>What does that mean in practice? Most of it is pretty basic. Things like:</p>
+
+<ul>
+  <li>H1 … 6 tags for headings</li>
+  <li>Paragraph tags instead of double BR tags</li>
+  <li>CSS instead of FONT</li>
+  <li>Tags that describe content (like code, abbr or cite)</li>
+</ul>
+
+<h3 id="logical-vs-physical-styles">Logical vs. Physical Styles</h3>
+
+<!-- Try to remember the definition and some examples of Logical vs Physical. I'll ask this on a quiz. -->
+
+<p>While the content <em>looks</em> the same, there are differences between logical and physical styles.  </p>
+
+<p>Easy to remember: </p>
+
+<p class="message">Physical styles define what content looks like. Logical styles define what content is.</p>
+
+<p>Important for screen readers and other access devices.</p>
+
+<h4 id="some-physical-styles">Some physical styles:</h4>
+
+<ul>
+  <li>b - Bold</li>
+  <li>i - Italic</li>
+  <li>s - Strikethrough</li>
+  <li>u - Underline</li>
+</ul>
+
+<h4 id="examples-of-logical-styles">Examples of logical styles:</h4>
+
+<ul>
+  <li>code - Code sample</li>
+  <li>kbd - Keyboard entry</li>
+  <li>samp - Programming sample</li>
+  <li>var - Variable</li>
+  <li>cite - Citation</li>
+  <li>dfn - Definition</li>
+  <li>abbr - Abbreviation</li>
+  <li>acronym - Acronym</li>
+  <li>del - Deleted text</li>
+  <li>ins - Inserted text</li>
+</ul>
+
+<h3 id="key-advantages">Key Advantages</h3>
+
+<ul>
+  <li>Extracting important pieces of information is simple (CITE or CODE tags for example)</li>
+  <li>Search engine optimization</li>
+  <li>Big win for jQuery</li>
+  <li>Screen readers</li>
+</ul>
+
+<h2 id="standards-the-need-for-xhtml">Standards: The need for XHTML</h2>
+<!-- Study these notes on XHTML -->
+
+<p>So, how did we get to XHTML?</p>
+
+<ul>
+  <li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
+  <li>Through a flurry of iterations, HTML 1.0 moved to 4.01 fairly quickly over 5 years or so</li>
+  <li>Despite it’s reputation as a loose language, HTML 4.01 can be written strict just like XHTML and HTML5 can</li>
+  <li>The problem was not with the language, nor with the authors. It was with the browsers.</li>
+  <li>Browser manufacturers created <strong>User Agents</strong> that would read code, interpret it, fix any mistakes and render a page, without any visible errors.</li>
+  <li>It was this that led to coders exploiting problems in browsers and creating pages that broke when new specs or updated UAs came out</li>
+  <li>Millions of pages are being produced with sloppy code because the UAs let it happen</li>
+  <li>The web is becoming filled with Tag Soup that makes it hard to index, with search tools having to trust things like META keywords and descriptions</li>
+  <li>A better solution is required: <strong>Get Strict!</strong></li>
+</ul>
+
+<h3 id="clean-up-the-mess">Clean up the mess</h3>
+
+<ul>
+  <li>After years of HTML development, 4.01 became the “Last Official Release”</li>
+  <li>The Web Working Group had taken a look at XML (Extensible Markup Language) and liked what they saw: a requirement for valid markup in order for an XML application to work</li>
+  <li>Why not take the ruleset from XML (lower case attributes, everything in quotes, close every tag) and apply it to HTML? Yay!</li>
+  <li>That should fix everything, right? Uh, no.</li>
+  <li>Original authors of XHTML wanted to force strict coding rules so that the Web could be seen as a giant application. </li>
+  <li>Reliable code on every page meant you could use the data anywhere</li>
+  <li>However, draconian error handling would cripple the web</li>
+</ul>
+
+<h3 id="on-toward-xhtml2">On toward XHTML2</h3>
+
+<ul>
+  <li>It was that last issue and the next one that were the main tipping points for the demise of XHTML, although many of the people in the Web Working Group didn’t know that yet</li>
+  <li>Between 2002 and 2006, a significant amount of development was attempted for XHTML2</li>
+  <li>An early decision was to abandon backward compatibility with XHTML1 and HTML4.x leading to significant controversy</li>
+  <li>What does that mean? “abandon backward compatibility”?</li>
+  <li>Deprecated tags would no longer work</li>
+  <li>All “old” code would have to be updated if you wanted to deliver XHTML</li>
+  <li>Browsers would have even more work to do when rendering pages</li>
+</ul>
+
+<h3 id="discussion-and-disruption">Discussion and disruption</h3>
+
+<ul>
+  <li>Some of the more contentious issues were split out into modules to be worked on by the W3C XHTML Working Group</li>
+  <li>At one point, a question was asked:</li>
+</ul>
+
+<p class="message">Shouldn't we be taking into account the billions of pages that are already out there, make the upgrading part easy and focus on the kinds of things people are actually doing today?
+Maybe not exactly that, but close</p>
+
+<ul>
+  <li>A vote was called and the motion was defeated. But the people who thought it was a good idea wanted to move forward</li>
+  <li>As a result - they created the <strong>WHATWG (Web Hypertext Application Technology Working Group)</strong> and began working on a competing specification, which was originally called <strong>Web Applications 1.0</strong></li>
+</ul>
+
+<h2 id="xhtml---a-review">XHTML - A review</h2>
+
+<!-- Just remember what the X stands for! -->
+<p>X = eXtensible</p>
+
+<ul>
+  <li>HTML reformulated as an XHTML application.</li>
+  <li>First major update to HTML since the 4.0 specification was released in 2000.</li>
+</ul>
+
+<p>Is there any reason why we should know, or code in, XHTML?</p>
+
+<ul>
+  <li>HUGE codebase of XHTML pages out there</li>
+  <li>Understand XHTML in order to convert it</li>
+  <li>Better, more predictable coding patterns</li>
+  <li>“verifiable” or “well-formed” code can be produced</li>
+  <li>Forces a higher standard of HTML</li>
+  <li>Porting to HTML5 is easy (if you also observe semantic guidelines)</li>
+</ul>
+
+<h3 id="xhtml-rules">XHTML Rules:</h3>
+
+<h4 id="all-elements-must-be-properly-nested">All elements must be properly nested</h4>
+<p>This is not valid: </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;b&gt;</span>Bolded Text<span class="nt">&lt;/p&gt;&lt;/b&gt;</span></code></pre></div>
+
+<p>This can be a problem with things like Lists <em>ol</em> and <em>ul</em>.
+Especially when closing the List Item <em>li</em> tag that contains the parent tag.</p>
+
+<h4 id="all-tags-must-close">All tags must close</h4>
+<p>Example: </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Some text here<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+<p>Empty Elements are closed as well: </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;br</span> <span class="nt">/&gt;</span> or <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;#&quot;</span> <span class="nt">/&gt;</span></code></pre></div>
+
+<p>An extra space is required before the slash to work with all browsers.</p>
+
+<h4 id="all-tag-names-must-be-in-lower-case">All tag names must be in lower case</h4>
+<p>This is not valid: </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;Img</span> <span class="na">Src=</span><span class="s">&quot;some_image.gif&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>Instead, must be:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;some_image.gif&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<h4 id="attribute-names-are-always-in-lower-case">Attribute names are always in lower case</h4>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">ALIGN=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span> should be <span class="nt">&lt;p</span> <span class="na">align=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<h4 id="all-attributes-must-be-quoted">All attributes must be quoted</h4>
+<p>Invalid:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">bgcolor=</span><span class="s">black</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>Valid:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">bgcolor=</span><span class="s">&quot;black&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<h4 id="attributes-cannot-be-minimized">Attributes cannot be minimized</h4>
+<p>Will not work in XHTML:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>The valid code is: </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked=</span><span class="s">&quot;checked&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<h4 id="name-attribute-is-no-longer-used-replace-with-id">Name Attribute is no longer used. Replace with id.</h4>
+
+<p>This will not validate:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;picture_off.gif&quot;</span> <span class="na">name=</span><span class="s">&quot;picture_off&quot;</span> <span class="nt">/&gt;</span></code></pre></div>
+
+<p>Instead, you will need to use: </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;picture_off.gif&quot;</span> <span class="na">id=</span><span class="s">&quot;picture_off&quot;</span> <span class="nt">/&gt;</span></code></pre></div>
+
+<p>In order to work with new and older browsers, you can use both name and id (however, you will get a
+warning).</p>
+
+<h3 id="mandatory-elements">Mandatory Elements</h3>
+
+<p>Every XHTML document must have these elements:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>
+<span class="nt">&lt;body&gt;</span></code></pre></div>
+
+<p>The doctype declaration <em>must</em> be there, but it is part of the document itself rather than an element of the document.</p>
+
+<h3 id="optional-xml-declaration">Optional XML declaration</h3>
+<p>Not required, but good practice:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;</span></code></pre></div>
+
+<h2 id="dtd-document-type-definition">DTD: Document Type Definition</h2>
+
+<p>A DTD is a <em>description</em> of the document, and the legal definitions that fall within it.</p>
+
+<p>The DTD defines the syntax of the page in <em><a href="http://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language">SGML</a></em>.
+This translates to: Because XHTML is just the application of XML to HTML, you need to tell the browser (the interpreter) what rules to use when interpreting the code on the page.</p>
+
+<h3 id="three-kinds-of-dtd">Three kinds of DTD:</h3>
+
+<h4 id="strict">Strict</h4>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</span></code></pre></div>
+
+<p>Mostly used for technical documents or content that requires very little markup.
+This is the original intention of the W3C”s recommendation.</p>
+
+<h4 id="transitional-most-common">Transitional (most common)</h4>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span></code></pre></div>
+
+<p>This is by far the most common DTD in XHTML. It supports most HTML features and was created to provide a middle ground for users trying to convert from HTML to XHTML in stages.</p>
+
+<h4 id="frameset">Frameset</h4>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Frameset//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&quot;&gt;</span></code></pre></div>
+
+<p>Same as Transitional, but allows the use of frames</p>
+
+<h3 id="example-of-an-xhtml-document">Example of an XHTML Document</h3>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;</span>
+<span class="cp">&lt;!DOCTYPE html</span>
+<span class="cp">PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>COMP 1950 - Intermediate Web Development and Design<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1&gt;</span>Welcome!<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>This class will begin at 6:30 each Tuesday for 12 weeks<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+<h3 id="validate-your-code">Validate your code!</h3>
+
+<p><a href="http://validator.w3.org/">W3C HTML Validator</a> </p>
+
+<h2 id="html5">HTML5</h2>
+
+<p>HTML was born out of frustration with languishing XHTML2 development, which went on for <em>years</em> after XHTML 1.0 debuted.</p>
+
+<ul>
+  <li>The last official spec of XHTML had come in 2000 and by 2005, there was little forward movement, with the development bogged down in committees and problems reaching consensus</li>
+  <li>There were two distinct camps: Strict and Non Strict (overly simplified terms)</li>
+  <li>After a series of decisions against a more forgiving, backward compatible version, a number of HTML Working Group members created their own group: WHATWG</li>
+  <li>After 3 years, Web Applications 1.0 gained considerable momentum when Mozilla, Apple and Opera joined the Working Group and requested that it become part of the W3C’s HTML Working Group</li>
+  <li>In 2007, the W3C HTML working group adopted the development, renamed it HTML5 (a successor to HTML 4.01) and released a Public Working Draft in 2008</li>
+  <li>As of today, HTML5 is a Living Standard, and is now just called HTML</li>
+</ul>
+
+<h3 id="the-basics-of-html5">The basics of HTML5</h3>
+
+<p>Some of the most important parts of HTML5 are:</p>
+
+<ul>
+  <li>Backwards compatible - there will be an attempt to make the system compatible</li>
+  <li>XML can be included as a markup language from within HTML5</li>
+  <li>Ultra simple Doctype: </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span></code></pre></div>
+
+<p>One of the guiding principles: <strong>Semantic Coding</strong> - giving meaning to your content with your code.</p>
+
+<p>While these may seem insignificant, but they are great strides forward.</p>
+
+<p>Some of the most common new elements: </p>
+
+<p>This a tag representing a document or application section:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section&gt;</span></code></pre></div>
+
+<p>This tag is an independent piece of content in a document:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;article&gt;</span></code></pre></div>
+
+<p>For content “only slightly” related to the content:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;aside&gt;</span></code></pre></div>
+
+<p>Used for the header or footer on a page:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header&gt;</span> or <span class="nt">&lt;footer&gt;</span></code></pre></div>
+
+<p>Represents an area for navigation:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span></code></pre></div>
+
+<p>For when you want to include an element that is related to the content in an image, sound, video or other: </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;figure&gt;</span></code></pre></div>
+
+<p>There is a list of additional tags that will continue to refine what will be possible with HTML5:
+audio, video, embed, mark, meter, progress, time, canvas, command, datagrid, details, datalist, keygen, bb, output, ruby</p>
+
+<p>Input &amp; Type elements will also have new attributes that allow for greater Form functionality:</p>
+
+<p>datetime, date, month, week, time, number, range, email, url, search, color</p>
+
+<p>There are a huge list of additional attributes that have changed, allowing for considerable agility with web development</p>
+
+<p>There have also been a few <em>elements</em> removed, such as: big, font, strike, and a few more</p>
+
+<p>There are also a large number of <em>attributes</em> that have been removed, such as: align, background, border, height, size, type, width and more</p>
+
+<h2 id="markup-exercise">Markup Exercise</h2>
+
+<p>You have two pieces of homework for this week. Please finish both:
+<a href="homework/">Create a page for a Realtor in XHTML Strict and HTML5</a></p>

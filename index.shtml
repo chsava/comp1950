@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>COMP 1950 Web Development 2</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+<!--#include file="header.html" -->
+<!--#include file="vmenu.html" -->
+<div id="main_right">
+<!--#if expr="$QUERY_STRING" -->
+<!--#include file="$QUERY_STRING.html" -->
+<!--#else -->
+<!--#include file="home.html" -->
+<!--#endif -->
+</div>
+
+<!--#include file="footer.html" -->
+</body>
+</html>
