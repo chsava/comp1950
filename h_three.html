@@ -1,0 +1,161 @@
+<h1 class="page-title">Week Three Homework</h1>
+  <h2 id="realtor-page-enhancements">Realtor Page Enhancements</h2>
+
+<p>Next week we will use what you will do for homework this week to build a responsive site using media queries.</p>
+
+<p>To prepare yourself, please add more detail into your Realtor page so that you have content to work with.</p>
+
+<p>Create a <em>single</em> page for your Realtor that includes:</p>
+
+<ul>
+  <li>Realtor name, company, contact information</li>
+  <li>Realtor bio (a few sentences on the Realtor)</li>
+  <li>At least 3 houses for sale with details like Address, List price, Bedrooms, Bathrooms, Square footage, Year built</li>
+  <li>Content in the Header and Footer</li>
+  <li>A navigation that points to at least 4 other pages. Anything you like, but check other Realtor pages for examples if you don’t have any</li>
+  <li>Links can just self reference- ie: they don’t need to go anywhere:</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+<h2 id="alternate-stylesheet-for-realtor">Alternate stylesheet for Realtor</h2>
+
+<p>Create a second stylesheet for your Realtor page that changes how things are laid out, colours, fonts, anything that makes it obvious the styles are different.</p>
+
+<ul>
+  <li>Keep all of the elements, just change the CSS</li>
+  <li>Remember to give the two stylesheets names so that you can differentiate them</li>
+  <li>Use Firefox to View &gt; Page Style</li>
+  <li>You might need to change around some of your HTML in order to make everything work properly. This is normal.</li>
+</ul>
+
+<h2 id="print-stylesheet-for-realtor">Print Stylesheet for Realtor</h2>
+
+<p>Using the following notes for Creating a Print Stylesheet, create a print stylesheet for your Realtor page.</p>
+
+<ul>
+  <li>Think about what information would be present on your web version that might not be on your print version.</li>
+  <li>Use the <code class="inline">media="print"</code> attribute &amp; value to ensure the stylesheet can be seen by <strong>Print &gt; Preview</strong></li>
+  <li>Do not use a <code class="inline">title=""</code> attribute on the print stylesheet</li>
+</ul>
+
+<h1 id="creating-a-print-stylesheet">Creating a Print Stylesheet</h1>
+
+<p>The key to a stylesheet specifically for printing is a matter of planning more than anything.</p>
+
+<h2 id="before-you-begin">Before you begin</h2>
+
+<p>You’ll need a few things prepared before you can begin:</p>
+
+<ul>
+  <li>A layout that is separated by divs in order to select specific areas for printing or not</li>
+  <li>Semantic markup that supports page headlines</li>
+  <li>Knowing what areas you want printed and what you don’t</li>
+  <li>Organize content so that printable areas are not nested in non-printable ones</li>
+  <li>A recognition of why users will print pages - different styles based on different uses</li>
+</ul>
+
+<h2 id="how-to-start">How to start</h2>
+
+<p>Make sure you have separate elements for:</p>
+
+<ul>
+  <li>each content section you want printed</li>
+  <li>page elements that represent titles or headers</li>
+  <li>other printable elements (footers)</li>
+  <li>non-printing elements (navigation/sidebars/header images/backgrounds)</li>
+</ul>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>Once you have planned your layout and created distinct elements, the next steps are to:</p>
+
+<ul>
+  <li>Hide the elements you don’t want the printer to see</li>
+  <li>Re-style the layout</li>
+  <li>Re-style the visuals</li>
+  <li>Add hyperlink data to Anchor elements</li>
+</ul>
+
+<h3 id="hiding-elements">Hiding Elements</h3>
+
+<p>Hide the elements you don’t want printed.  As an example, let’s say I didn’t want the navigation, footers, or the #sidebar printed out:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">nav</span><span class="o">,</span> <span class="nt">footer</span><span class="o">,</span> <span class="nf">#sidebar</span>  <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+	<span class="p">}</span></code></pre></div>
+
+<p>This will tell the printer to ignore any of the elements listed in the declaration. Be careful to make sure that none of the elements that are ignored have valuable info in them.</p>
+
+<p>You may need to re-code your page so that it will work with your print stylesheet and alternate stylesheets.  This is normal web development.</p>
+
+<h3 id="re-styling-layout">Re-styling Layout</h3>
+
+<p>You now have a number of elements remaining that will either have no style at all, or will inherit the styles of any sheets with “ALL” as the media. For this reason, it is important to create out own reset and explicitly style the remaining elements:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span><span class="o">,</span> <span class="nf">#content</span><span class="o">,</span> <span class="nf">#main</span><span class="o">,</span> <span class="nt">header</span><span class="o">,</span> <span class="nt">article</span><span class="o">,</span> <span class="nt">section</span>  <span class="p">{</span>
+   <span class="k">float</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+   <span class="k">width</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+   <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+   <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+   <span class="k">background</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<ul>
+  <li>The float property is very important, as it can lead to major printing problems if you have any divs that have been floated</li>
+  <li>The rest of the declarations will remove any width or padding restrictions, allowing the printer to set the margins for each page</li>
+  <li>If you are using this sheet with another stylesheet that has ALL listed as the value for media, you might want to add !important after each rule, to be sure that there will be no inheritance problems</li>
+  <li>Having a rule like <code class="inline">background: none;</code> is good if you use backgrounds, or if you don’t. If you do, they’re gone, if you don’t - consider it future-proofing.</li>
+</ul>
+
+<h3 id="re-styling-visuals">Re-styling Visuals</h3>
+
+<p>This part is the most subjective. You may want to have users continue to see the fonts and headings the way you displayed them on the screen, or you may want them to be of a more readable style.</p>
+
+<p>Also, pay attention to colors here. If you have a light-colored font on a dark-colored background on the screen, or if your anchors are lighter than normal, be sure to set them to a color that is easily seen after printing.</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span><span class="o">,</span> <span class="nf">#content</span><span class="o">,</span> <span class="o">,</span> <span class="nf">#main</span><span class="o">,</span> <span class="nt">article</span><span class="o">,</span> <span class="nt">section</span> <span class="p">{</span>
+	<span class="k">color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
+	<span class="k">font</span><span class="o">:</span> <span class="m">12pt</span><span class="o">/</span><span class="m">15pt</span> <span class="n">Georgia</span><span class="o">,</span> <span class="s2">&quot;Times New Roman&quot;</span><span class="o">,</span> <span class="n">Serif</span><span class="p">;</span>
+<span class="p">}</span>
+	
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span><span class="o">,</span> <span class="nt">header</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Verdana</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Sans</span><span class="o">-</span><span class="k">serif</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>With the proliferation of color printers, you might want to choose a color that will show links in B&amp;W as well as color printing (I selected #309 - a compacted hex code for a medium-dark blue):</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">a</span><span class="nd">:link</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
+	<span class="k">color</span><span class="o">:</span> <span class="m">#309</span><span class="p">;</span>
+	<span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+	<span class="k">text-decoration</span><span class="o">:</span> <span class="k">underline</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<h3 id="hyperlinks-in-print">Hyperlinks in Print</h3>
+
+<p>One of the most useful things you can do in print format is to provide links for the user to see. Without this little trick, they will only see a tags as they are displayed onscreen - likely a different colour and underlined.</p>
+
+<p>In order for this to work, you will need two declarations, one for relative links and one for fully qualified ones.</p>
+
+<p>Fully qualified (entire URL) links will be styled like this:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#content</span> <span class="nt">a</span><span class="nd">:link:after</span><span class="o">,</span> 
+<span class="nf">#content</span> <span class="nt">a</span><span class="nd">:visited:after</span><span class="o">,</span>
+<span class="nf">#main</span> <span class="nt">a</span><span class="nd">:link:after</span><span class="o">,</span> 
+<span class="nf">#main</span> <span class="nt">a</span><span class="nd">:visited:after</span> <span class="p">{</span>
+	<span class="k">content</span><span class="o">:</span> <span class="s2">&quot; (URL: &quot;</span> <span class="n">attr</span><span class="p">(</span><span class="n">href</span><span class="p">)</span> <span class="s2">&quot;) &quot;</span><span class="p">;</span>
+	<span class="k">font-size</span><span class="o">:</span> <span class="m">90%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>This will append a URL to the end of a link on a page, surrounded in brackets with the acronym URL:. The declaration starts with the content property and the value combined with the attr(href) value to the right of the colon.</p>
+
+<p>The following deals with relative links that start from the root, such as: </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/products/index.html&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>This will look for anything that starts with a known character, specifically a slash ( / ) and then prepend the site name:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#content</span> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">&quot;/&quot;</span><span class="o">]</span><span class="nd">:after</span><span class="o">,</span>
+<span class="nf">#main</span> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">&quot;/&quot;</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; (http://www.thenet.ca&quot;</span> <span class="n">attr</span><span class="p">(</span><span class="n">href</span><span class="p">)</span> <span class="s2">&quot;) &quot;</span><span class="p">;</span>
+   <span class="p">}</span></code></pre></div>

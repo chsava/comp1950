@@ -1,0 +1,97 @@
+<h1 class="page-title">Week Four Exercises</h1>
+  <h1 id="positioning-with-css">Positioning with CSS</h1>
+
+<p>There are a number of different ways to position elements on the page. Static, Relative, Absolute, Float are commonly spoken of, but not always well understood.</p>
+
+<p>Using the <a href="example.html">example code page</a> that has been created, you can see various methods illustrated. These will help you in determining how to use various positioning methods for placing elements in desired locations and for layout.</p>
+
+<h2 id="static">Static</h2>
+
+<p>By default, positioning for all elements is position:static, which means the element is part of the normal flow of any document. Using a method like this to define DIVs would simply position them where they would go normally.</p>
+
+<h2 id="relative">Relative</h2>
+
+<p>By specifying position: relative, you can use a number of positioning values built into CSS: top, bottom, left or right. These will move the element to a position offset by where it would have normally been positioned.</p>
+
+<ul>
+  <li>Using the example page, try moving #box-one to a different position. Start with down 30 pixels, and to the right 30 pixels.</li>
+  <li>Next, try moving it to different locations.</li>
+  <li>What do negative numbers do?</li>
+  <li>Despite the fact that the element has been moved, the space that it occupied has not moved at all. That is because the element is technically still resident in that space, but has been moved by the CSS.</li>
+</ul>
+
+<p>It appears that <strong>position:relative</strong> is not very useful, but it will perform an important task later in this tutorial.</p>
+
+<h2 id="absolute">Absolute</h2>
+
+<p>Unlike with relative positioning, absolute will remove the element from the normal flow altogether and place it exactly where you want it in the document.</p>
+
+<ul>
+  <li>Using the example page, try moving #box-two to the top left corner of the page.</li>
+  <li>Next, try moving it to the bottom right.</li>
+  <li>What happens when you resize the browser after moving it there?</li>
+  <li>Absolute positioning will cause other elements on the page to be re-positioned. This is important to recognize when you are using this method of positioning. In effect, any absolutely positioned elements are completely removed from the normal flow.</li>
+  <li>Now try moving #box-one and #box-two to the top left corner. What happens?</li>
+</ul>
+
+<p>Here is where absolute positioning can be a problem and relative positioning can help.</p>
+
+<h2 id="using-both-relative--absolute">Using both: relative &amp; absolute</h2>
+
+<p>Using both relative and absolute positioning on elements allows us to better control position. By setting the position of a parent element (like a DIV) to relative will cause all child elements (like a nested DIV) to take their positioning rules from the parent.</p>
+
+<ul>
+  <li>Can you position #box-two-kid1 to the top-right of #box-two?</li>
+  <li>Can you position #box-two-kid1 and #box-two-kid2 next to one another?</li>
+  <li>Can you switch their locations?</li>
+  <li>Now we can make a two-column layout using relative and absolute positioning!</li>
+</ul>
+
+<p><strong>PRO</strong>: Using absolute positioning, elements can be placed anywhere within your containing elements. This means that, no matter what order your content is located in your HTML, you can place it anywhere on the page.</p>
+
+<p><strong>CON</strong>: Absolute positioning will remove the content from the normal flow, so if there is other content present, it may be hidden under absolutely positioned content.</p>
+
+<h2 id="using-height">Using height</h2>
+
+<p>While using something like height: Xpx; might be a good short-term solution, it doesn’t make sense in the long term. Especially with variable font sizes, this can cause your content to spill over, or be limited by the DIV you are in because of the restriction in height.</p>
+
+<ul>
+  <li>Place a lot of content in #box-one (the Lorem Ipsum generator is excellent for this) and give it a height of 150px. What happens as you put in more code?</li>
+</ul>
+
+<h2 id="next-up-float">Next up: float</h2>
+
+<p>For variable height columns, absolute positioning does not work, so let’s come up with another solution.</p>
+
+<ul>
+  <li>Using the built-in abilities of float, elements can be pushed to the left or right, with text flowing around the floated element.</li>
+</ul>
+
+<p>What happens when you float #box-one? To the right? To the left?</p>
+
+<h2 id="creating-simple-floating-columns">Creating simple floating columns</h2>
+
+<p>Using floating columns, a simple layout can be created by floating more than one DIV.</p>
+
+<ul>
+  <li>Try placing #box-one and #box-two beside one another using float.</li>
+  <li>Float both to the same direction - what happens?</li>
+  <li>Put some content in #box-one and float #box-one and #box-two so they sit side by side. What happens to #box-three?</li>
+  <li>Clearing the float problem</li>
+</ul>
+
+<p>Floating columns (made from DIVs or other elements) can be problematic if they are in the vicinity of other elements. Occasionally, the floated elements will overlap. This can be fixed by the clear: left/right/both; declaration.</p>
+
+<ul>
+  <li>Using the same floated elements from the previous section, can you get #box-three to live below both #box-one and #box-two?</li>
+</ul>
+
+<h2 id="permanently-fixed">Permanently Fixed</h2>
+
+<p>Similar to absolute is fixed positioning. This removes the element from the normal flow, but does not position it anywhere else within the document. Instead, the element is pinned to one location despite the movement of the rest of the page.</p>
+
+<ul>
+  <li>Try filling up #box-one with a lot of code (the Lorem Ipsum generator is excellent for this). Next, try positioning #box-one at some fixed location.</li>
+  <li>What happens when you scroll the page?</li>
+  <li>What might this be good for?</li>
+</ul>

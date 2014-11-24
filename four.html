@@ -1,0 +1,302 @@
+<h1 class="page-title">Week Four</h1>
+  <h2 id="agenda">Agenda</h2>
+
+<ul>
+  <li>Markup Quiz</li>
+  <li>Review HTML5 Assignment: Print Styles</li>
+  <li>CSS Concepts</li>
+  <li>Specificity</li>
+  <li>Measurements</li>
+  <li>Homework</li>
+</ul>
+
+<h2 id="markup-quiz">Markup Quiz</h2>
+
+<p class="message">A quick markup quiz that covers the first 3 weeks of the course. 15 minutes is all you should need.</p>
+
+<h2 id="last-week-review">Last Week Review</h2>
+
+<p>One of the areas I would like to see some more consideration is on Print Style Sheets. They work just like a normal stylesheet, but you have much less display opportunity than a screen based device.</p>
+
+<p>Take a look at this page on <a href="http://www.smashingmagazine.com/2014/04/15/understanding-css-timing-functions/">CSS timing functions from Smashing</a>. </p>
+
+<p>Compare the screen version versus the print version. Notice the elements that are present and the ones that aren’t. The easiest way to view the printed version is clicking <strong>File &gt; Print Preview</strong> on a PC or <strong>File &gt; Print</strong> on a Mac and select Open PDF in Preview from the PDF menu.</p>
+
+<p>Mostly, look at how the information is presented that takes advantage of the likely destination format: paper.</p>
+
+<h2 id="css-positioning">CSS Positioning</h2>
+
+<p>Building proper CSS-based layouts requires an understanding of how positioning works, which is based largely on the <strong><a href="box-model.png">Box Model</a></strong> concept.</p>
+
+<p>Box model math is where almost all layouts fail.  Content = width in default model.</p>
+
+<h3 id="box-model-basics">Box model basics</h3>
+
+<ul>
+  <li>All elements are built around the concept of a box</li>
+  <li><em>Every</em> element is contained in a Box of some sort or another</li>
+  <li>Each element has a content at it’s core, surrounded by padding, borders, margins</li>
+  <li>Both inline and block-level elements having these properties</li>
+  <li>Width refers to left inner edge to the right inner edge of content</li>
+  <li>Height refers to the top inner edge to the bottom inner edge of content</li>
+  <li>Additionally, margins will collapse vertically, but not horizontally</li>
+</ul>
+
+<h3 id="basic-example">Basic example</h3>
+
+<p>A <strong>paragraph</strong> inside a <strong>div#wrap</strong> which is, in turn contained inside the <strong>body</strong> element.</p>
+
+<ul>
+  <li>Measurements need to include padding, border and margin for math to work</li>
+  <li>Relative measurements can be problematic due to their inheritance </li>
+</ul>
+
+<p>Easy so far, right?</p>
+
+<p>When it comes to layouts, you can now use the following:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">html</span> <span class="p">{</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">*,</span> <span class="o">*</span><span class="nd">:before</span><span class="o">,</span> <span class="o">*</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">inherit</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>What does this do?</p>
+
+<h2 id="positioning-details">Positioning Details</h2>
+
+<p>There are a few terms worth knowing….</p>
+
+<ul>
+  <li><strong>Normal Flow</strong> - these are generally text that ‘flows’ from left to right (in Western society). Normal flow is the default scheme with block elements flowing from the top downwards. Inline elements flow left to right. Normal flow also sees your vertical margins collapsing. Only the larger of the two margins are used when calculating distance between the two.</li>
+  <li><strong>Non-replaced element</strong> - these elements are actually contained inside the document.</li>
+</ul>
+
+<p><em>Example</em>: a paragraph of text.</p>
+
+<ul>
+  <li><strong>Replaced element</strong> - these are not actually contained in the document, but are linked to.</li>
+</ul>
+
+<p><em>Example</em>: an img or input tag</p>
+
+<h3 id="floating-and-positioning">Floating and Positioning</h3>
+
+<p>In order to have your content show in an appropriate location, you may need to either float or position your containers.</p>
+
+<p>Positioning is fairly strightforward and has been around for a long time. Declare exactly where an element box will appear compared to where it would normally be.</p>
+
+<h3 id="positioning-states">4 positioning states:</h3>
+
+<ul>
+  <li><strong>Static</strong>: Generated as normal</li>
+  <li><strong>Relative</strong>: The box is offset by some distance</li>
+  <li><strong>Absolute</strong>: The box is no longer part of the flow of the document and is placed with respect to its containing block.</li>
+  <li><strong>Fixed</strong>: Similar to absolute, but it is attached to a specific location</li>
+</ul>
+
+<p>Floating was introduced in CSS1 and gives rise to a lot of difficulties for many users.</p>
+
+<p>Similar to &lt;img src=”img.gif” align=”right”&gt; which ‘floats’ the image to the right of the content, and other content will float around floated elements.</p>
+
+<p>Consecutive floats (with similar alignment like right or left) will attempt to float using the same top-line, but will collapse to another line if space does not permit</p>
+
+<p>Remember! Consecutive right floats will appear in reverse order on the final render.</p>
+
+<p>To make sure elements don’t fall into a floated element, you can use the following: </p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.example</span> <span class="p">{</span>
+  <span class="k">clear</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>You can also use <strong>right</strong> and <strong>both</strong> as arguments.</p>
+
+<h2 id="exercise">Exercise</h2>
+
+<p><a href="exercises/">A walkthrough of some positioning scenarios</a></p>
+
+<h2 id="layout-basics">Layout Basics</h2>
+
+<p>In order to lay out content on the screen, there needs to be a container that you can place your content into. Often this is the <strong>body</strong> element.</p>
+
+<p>For a <a href="http://codyhouse.co/gem/custom-google-map/">single column, vertical stack</a>, this is fairly easy: just place all the content in the container. Single page stacks are becoming very common.</p>
+
+<p>For more complex layouts, (more than 1 column), you will need to create a container to hold your different content areas.</p>
+
+<p>DIV elements are best for this, because they contain no semantics and can easily be used in your code. </p>
+
+<p>They can be floated, or positioned in any way. Similarly, elements within those divs can also be positioned relatively or absolutely</p>
+
+<h2 id="basic-div-layout-examples">Basic div layout examples</h2>
+
+<ul>
+  <li>CSS Layout One - <a href="http://thenet.ca/layouts/one">Two Column Fixed</a></li>
+  <li>CSS Layout Two - <a href="http://thenet.ca/layouts/two">Two Column Fluid</a></li>
+  <li>CSS Layout Three - <a href="http://thenet.ca/layouts/three">Three Column Fixed</a></li>
+  <li>CSS Layout Four - <a href="http://thenet.ca/layouts/four">Three Column Fluid</a></li>
+</ul>
+
+<h3 id="grid-system">Grid System</h3>
+
+<p>We will take a look at a basic grid system next week.</p>
+
+<h2 id="media-queries">Media Queries</h2>
+
+<p>Media Queries are the basis of Responsive Web Design and are a simple tweak of style sheet media declarations.</p>
+
+<p>The ability to target specific device widths and orientations has made it possible to create “Responsive” web designs. Ethan Marcotte wrote one of the very first articles on Responsive Web Design in 2010, and the idea has taken off since then.</p>
+
+<p>The concept is fairly simple:</p>
+
+<ul>
+  <li>Use @media declarations to target device size and/or orientation using CSS</li>
+  <li>Because you have already created print stylesheets, you’ve used the concept! </li>
+</ul>
+
+<p>It’s fundamentally the same idea, but instead of targeting a specific type of media, you will be targeting a specific size.</p>
+
+<ul>
+  <li>Basic Media Query: @media TYPE (FEATURE: VALUE) { CSS rules go here }</li>
+  <li>Type: Target media type, mostly screen</li>
+  <li>Feature: There are a number of features that can be targeted, including:
+    <ul>
+      <li>width: width of the viewport</li>
+      <li>height: height of the viewport</li>
+      <li>device-width: width of the device</li>
+      <li>device-height: height of the device</li>
+      <li>orientation: landscape or portrait</li>
+    </ul>
+  </li>
+  <li>Value: the corresponding value such as size in pixels or other specifications like landscape</li>
+</ul>
+
+<p>Media queries can be specified in the head of a document (embedded) or they can be linked to like any other stylesheet, which will contain the queries themselves.</p>
+
+<p>Media queries can also be specified in the LINK tag itself, like this:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;smaller.css&quot;</span> <span class="na">media=</span><span class="s">&quot;screen and (max-width: 1024px)&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;larger.css&quot;</span> <span class="na">media=</span><span class="s">&quot;screen and (min-width: 1024px)&quot;</span> <span class="nt">/&gt;</span></code></pre></div>
+
+<p>Additionally, some devices have been designed to display higher resolution pages in a smaller area. This can cause confusion, and so a META tag was designed to get around this issue:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;initial-scale=1.0, width=device-width&quot;</span> <span class="nt">/&gt;</span></code></pre></div>
+
+<h3 id="how-do-they-work">How do they work?</h3>
+
+<p>When the page is initially rendered, the user agent (browser) will assess the size of the viewport and select CSS based on any media query declarations. This is also true if the viewport is resized.</p>
+
+<h3 id="try-it-out">Try it out</h3>
+
+<p>Here is a <a href="http://thenet.ca/media-query-tool">Media Query tool</a> that will report what media query is being used on the page.  View the source to see how it works.</p>
+
+<h3 id="figure-it-out">Figure it out</h3>
+
+<p>Here is an <a href="http://thenet.ca/media-query">example page</a> that needs a media query to work correctly.  Use Web Developer Toolbar to create a media query within the CSS that will put all three blocks of content (Twitter, Facebook and Baidu) next to one another.</p>
+
+<h3 id="fixed-vs-fluid">Fixed vs Fluid</h3>
+
+<p>When looking at responsive designs, there is the decision to build Fixed vs Fluid designs.</p>
+
+<p>Fixed are easier to control as you know the widths and don’t have to worry about overflowing elements, items that don’t fit from side to side, margin and padding calculations and more.</p>
+
+<p>Fluid designs us percentage and em (relative) widths for things that allow you to build a style that will scale to ANY size of user agent</p>
+
+<p>The Flexible Grid is the key to being successful for fluid designs. There are two primary drivers behind this method:</p>
+
+<ul>
+  <li>target / context = result</li>
+  <li>max-width: 100%</li>
+</ul>
+
+<p>The first calculation relates to your measurements for widths, margins, padding and even font-size when building a fluid design.</p>
+
+<p>How <strong>target / context = result</strong> works</p>
+
+<p>Everything centers around the base font size.  Setting that for the body element will allow everything else to follow.</p>
+
+<p>Let’s say you are interested in having a first-level heading appear as 20px in size.</p>
+
+<p>If you assume that you have set your body {…} element as having a font-size of 16px, then we have the two required parts of our calculation:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">target (20) / context (16) = 1.25</code></pre></div>
+
+<p>Take that 1.25 as a relative measurement based on the default 16px setting. Use it now as the following:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="o">,</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="o">,</span> <span class="n">Sans</span><span class="o">-</span><span class="k">serif</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="c">/* target / context = result */</span>
+  <span class="c">/* 20     / 16      = 1.25   */</span>
+  
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">1.25em</span><span class="p">;</span> <span class="c">/* This will render the font-size to the equivalent of 20px */</span>
+  <span class="p">}</span></code></pre></div>
+
+<h3 id="image-widths">Image widths</h3>
+
+<p>One of the biggest challenges to any responsive design is images</p>
+
+<p>Most images want to display at full size, but this method means they may be displayed at multiple sizes, and issuing width=”…” and height=”…” attributes in your IMG tags makes it difficult to make this work.</p>
+
+<p>In comes the <strong>max-width</strong> rule in your CSS</p>
+
+<p>Using this rule, you are essentially saying that the image should always be 100% of the parent element</p>
+
+<p>With either a fixed or fluid layout, you will have your images respect the parent element’s width, so you don’t have to add width attributes in your <strong>img</strong> tags.</p>
+
+<h3 id="taking-it-further">Taking it further</h3>
+
+<p>Moving this idea to your layouts, you can determine how wide boxes, margins and paddings are using the same method.</p>
+
+<p>Next week, we will go into this in more detail to enhance our Realtor page again</p>
+
+<h3 id="grid-systems">Grid Systems</h3>
+
+<p>Grid systems have been around for some time, trying to assist in the development of layouts</p>
+
+<p>An early good one was 960.gs, which allowed you to specify the number of columns wide you wanted any particular row to be</p>
+
+<p>Initially focused on Fixed, it moved to including a Fluid layout as well</p>
+
+<p>Since then, a huge number of grid systems have been introduced that make it a lot easier to build layouts.</p>
+
+<p>Some popular ones:</p>
+
+<ul>
+  <li>Semantic.gs</li>
+  <li>Foundation</li>
+  <li>Skeleton</li>
+  <li>Columnal</li>
+  <li>Suzy</li>
+</ul>
+
+<p>However! I think it’s very important that you start from scratch at some point, so you understand the limitations and how to adapt a pre-configured layout</p>
+
+<h2 id="homework">Homework</h2>
+
+<p>Last week, you did some epic homework combining a bunch of things. This week, with the long weekend approaching and the sun coming out, you have a lighter workload!</p>
+
+<h3 id="realtor-page---next-version">Realtor Page - Next Version</h3>
+
+<p>You will take your Realtor page and build it with an adaptive design that has 3 breakpoints in it:</p>
+
+<ul>
+  <li>1024px or larger</li>
+  <li>360px or smaller</li>
+  <li>361px - 1023px</li>
+</ul>
+
+<p>In each style, be sure to have a different layout and navigation scheme that makes sense for the different style.</p>
+
+<p>Styles do not have to be fluid, but you can try it if you like. Fixed styles are fine so long as they work correctly for each size.</p>
+
+<p>If you don’t have a device to test on, be sure to use the Firefox Developer Tools (Tools &gt; Web Developer &gt; Responsive Design View)</p>
+
+<p>Remember to validate your page and have a link to the validator!</p>
+
+<p>Homework is due EVERY MONDAY AT NOON.</p>
+
+<h3 id="do-not-use-a-pre-developed-grid-system-for-this-assignment">Do NOT use a pre-developed Grid System for this assignment</h3>

@@ -67,7 +67,6 @@ margin: 0;
 
 #main_left {
 width: 100px;
-height: 450px;
 margin-top: 0px;
 float: left;
 text-align: center;
@@ -81,10 +80,9 @@ border: 1px;
 }
 
 #main_right {
-overflow-y: scroll;
+overflow-y: hidden;
 overflow-x: hidden;
 width: auto;
-height: 450px;
 margin-top: 0px;
 clear: right;
 padding-top: 20px;
