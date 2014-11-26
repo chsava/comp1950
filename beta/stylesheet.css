@@ -24,23 +24,28 @@ a:visited {
 /* HEADER */
 
 #header {
-
 	width: 100%;
 	background-color: red;
 	height: 178px;
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: right;
 }
 
-#header input {
+/*#form1 {
 	float: right;
-	display: block;
-}
+	margin-right: 10%;
+	background-color: blue;
+}*/
 
 #header h1 {
 	margin: 0 10% 0 0;
 	float: right;
 	position: relative;
- 	 top: 50%;
- 	 transform: translateY(-50%);
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	background-color: green;
 
 }
 
