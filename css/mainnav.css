@@ -1,7 +1,6 @@
 #mainnav {
   position: relative;
   height: 44px;
-  background: #2b2f3a;
   margin: 0 10%;
   width: auto;
 }
@@ -14,7 +13,6 @@
 #mainnav > ul {
   position: relative;
   display: block;
-  background: #2b2f3a;
   width: 100%;
   z-index: 500;
 }
@@ -47,14 +45,14 @@
 }
 #mainnav ul li a {
   display: block;
-  font-family: Helvetica, sans-serif;
+  font-family: "Avenir", "Futura", sans-serif;
   text-decoration: none;
 }
 #mainnav > ul > li > a {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   padding: 15px 20px;
-  color: #7a8189;
+  color: #AC4142;
   text-transform: uppercase;
   -webkit-transition: color 0.25s ease-out;
   -moz-transition: color 0.25s ease-out;
@@ -66,7 +64,7 @@
   padding-right: 32px;
 }
 #mainnav > ul > li:hover > a {
-  color: #ffffff;
+  color: #515151;
 }
 #mainnav li.has-sub::after {
   display: block;
@@ -92,7 +90,7 @@
   overflow: hidden;
   z-index: -1;
 }
-#pIndicator {
+pIndicator {
   position: absolute;
   height: 0;
   width: 100%;
@@ -105,7 +103,7 @@
   -o-transition: left .25s ease;
   transition: left .25s ease;
 }
-#cIndicator {
+cIndicator {
   position: absolute;
   height: 0;
   width: 100%;
@@ -161,8 +159,9 @@
   border-bottom: 1px solid #eeeeee;
   padding: 10px 20px;
   font-size: 12px;
-  color: #9ea2a5;
-  background: #ffffff;
+  color: #303030;
+  background: #E6E6E6;
+  font-family: "Avenir", "Futura", sans-serif;
   -webkit-transition: all .35s ease;
   -moz-transition: all .35s ease;
   -ms-transition: all .35s ease;
