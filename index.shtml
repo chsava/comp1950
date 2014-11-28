@@ -12,7 +12,7 @@
 	<div id="container">	
 		<header id="header">
 		        <form action="#">
-		                <input type="text" placeholder="&#128270;search">
+		                <input type="text" placeholder="&#128270;  Huh?">
 		        </form>
 			<a href="index.shtml" id="logo"><img src="img/logo.png" alt="Alistair's logo" width="35" height="35" /></a>
 		        <h1>COMP 1950 Web Development 2</h1>
