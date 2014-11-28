@@ -39,6 +39,11 @@ form input {
 	/*background-color: blue;*/
 }
 
+#logo{
+	float: left;
+	margin: .5%
+}
+
 #header h1 {
 	margin: 0 10%;
 	clear: right;
