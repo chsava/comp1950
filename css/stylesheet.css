@@ -27,7 +27,7 @@ a:visited {
 	width: 100%;
 	background-color: red;
 	height: 178px;
-	background-image: url(/img/background.jpg);
+	background-image: url(../img/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	text-align: right;
