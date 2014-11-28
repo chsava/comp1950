@@ -25,11 +25,11 @@ a:visited {
 
 #header {
 	width: 100%;
-	background-color: red;
+	background-color: #ffffff;
 	height: 178px;
-	background-image: url(../img/background.jpg);
+	background-image: url(../img/title.png);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 10%;
 	text-align: right;
 }
 
