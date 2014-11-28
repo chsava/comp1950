@@ -62,6 +62,12 @@ form input {
 	text-align: center;
 }
 
+.nav_float {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
 #nav_bar ul {
 	margin: 0;
 	padding: 0;

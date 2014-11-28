@@ -17,10 +17,10 @@
 			<a href="index.shtml" id="logo"><img src="img/logo.png" alt="Alistair's logo" width="35" height="35" /></a>
 		        <h1>COMP 1950 Web Development 2</h1>
 		</header>
-		<div id="mainnav">
+	<div id="mainnav">
         <ul>
-            <li><a href='index.shtml?about'><span>About</span></a></li>
-            <li class='active has-sub'><a href='#'><span>Lectures</span></a>
+            <li class="nav_float"><a href='index.shtml?about'><span>About</span></a></li>
+            <li class="nav_float" class='active has-sub'><a href='#'><span>Lectures</span></a>
                 <ul>
                     <li class='has-sub'><a href='index.shtml?lecture1'><span>Week 01</span></a>
                         <ul>
@@ -47,9 +47,9 @@
                     </li>
                 </ul>
             </li>
-            <li><a href='#'><span>Blog</span></a></li>
-            <li><a href='#'><span>Forum</span></a></li>
-            <li class='active has-sub'><a href='#'><span>Students</span></a>
+            <li class="nav_float"><a href='#'><span>Blog</span></a></li>
+            <li class="nav_float"><a href='#'><span>Forum</span></a></li>
+            <li class="nav_float" class='active has-sub'><a href='#'><span>Students</span></a>
               <ul>
                  <li><a href='index.shtml?student_pages'><span>Student Pages</span></a></li>
                  <li><a href='index.shtml?project'><span>Project</span></a></li>
