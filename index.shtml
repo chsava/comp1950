@@ -1,24 +1,102 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/mainnav.js"></script>
-<title>COMP 1950 Web Development 2</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" />
-<link rel="stylesheet" href="css/mainnav.css" type="text/css" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/mainnav.css" type="text/css" />
+	<script src="js/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/mainnav.js" type="text/javascript"></script>
 </head>
 <body>
-<!--#include file="header.html" -->
-<!--#include file="mainnav.html" -->
-<div id="main_right">
-<!--#if expr="$QUERY_STRING" -->
-<!--#include file="$QUERY_STRING.html" -->
-<!--#else -->
-<!--#include file="home.html" -->
-<!--#endif -->
-</div>
+	<div id="container">	
+		<header id="header">
+        <h1>COMP 1950 Web Development 2</h1>
+        <form action="#">
+                <input type="text" placeholder="&#128270;search">
+        </form>
+		</header>
+		<div id="mainnav">
+        <ul>
+            <li><a href='index.shtml?about'><span>About</span></a></li>
+            <li class='active has-sub'><a href='#'><span>Lectures</span></a>
+                <ul>
+                    <li class='has-sub'><a href='index.shtml?lecture1'><span>Week 01</span></a>
+                        <ul>
+                            <li><a href='index.shtml?lecture1'><span>Notes</span></a></li>
+                        </ul>
+                    </li>
+                    <li class='has-sub'><a href='index.shtml?lecture2'><span>Week 02</span></a>
+                        <ul>
+                           <li><a href='index.shtml?lecture2'><span>Notes</span></a></li>
+                           <li><a href='index.shtml?homework2'><span>Homework</span></a></li>
+                        </ul>
+                     </li>
+                     <li class='has-sub'><a href='index.shtml?lecture3'><span>Week 03</span></a>
+                        <ul>
+                           <li><a href='index.shtml?lecture3'><span>Notes</span></a></li>
+                           <li><a href='index.shtml?homework3'><span>Homework</span></a></li>
+                        </ul>
+                     </li>
+                     <li class='has-sub'><a href='index.shtml?lecture4'><span>Week 04</span></a>
+                        <ul>
+                            <li><a href='index.shtml?lecture4'><span>Notes</span></a></li>
+                            <li class='last'><a href='index.shtml?exercise4'><span>Exercises</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href='#'><span>Blog</span></a></li>
+            <li><a href='#'><span>Forum</span></a></li>
+            <li class='active has-sub'><a href='#'><span>Students</span></a>
+              <ul>
+                 <li><a href='index.shtml?student_pages'><span>Student Pages</span></a></li>
+                 <li><a href='index.shtml?project'><span>Project</span></a></li>
+              </ul>
+           </li>
+        </ul>
 
-<!--#include file="footer.html" -->
+		</div>
+		<div id="content">
+			<!--#if expr="$QUERY_STRING" -->
+			<!--#include file="$QUERY_STRING.html" -->
+			<!--#else -->
+			<!--#include file="home.html" -->
+			<!--#endif -->
+		</div>
+		<footer id="footer">
+                <div id="footer_about" class="footer_float">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#"> Comp 1950</a></li>
+                        <li><a href="#"> Contact</a></li>
+                    </ul>
+                </div>
+                <div id="footer_lecture" class="footer_float">
+                    <h3>Lectures</h3>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div id="footer_blog" class="footer_float">
+                    <h3>Blog</h3>
+                </div>
+                <div id="footer_forum" class="footer_float">
+                    <h3>Forum</h3>
+                    <ul>
+                        <li><a href="#">D2L</a></li>
+                    </ul>
+                </div>
+                <div id="footer_student" class="footer_float">
+                    <h3>Students</h3>
+                    <ul>
+                        <li><a href="#">Project Info</a></li>
+                        <li><a href="#">Student Pages</a></li>
+                    </ul>
+                </div>
+        </footer>
+	</div> <!-- END OF CONTAINER -->
 </body>
 </html>
