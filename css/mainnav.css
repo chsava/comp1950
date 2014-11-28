@@ -158,10 +158,11 @@ cIndicator {
   width: 130px;
   border-bottom: 1px solid #eeeeee;
   padding: 10px 20px;
-  font-size: 12px;
+  font-size: 15px;
   color: #303030;
   background: #E6E6E6;
   font-family: "Avenir", "Futura", sans-serif;
+  opacity: .95;
   -webkit-transition: all .35s ease;
   -moz-transition: all .35s ease;
   -ms-transition: all .35s ease;
@@ -172,8 +173,9 @@ cIndicator {
   text-align: right;
 }
 #mainnav ul ul li:hover > a {
-  background: #f2f2f2;
-  color: #8c9195;
+  background: #303030;
+  opacity: .95;
+  color: #E6E6E6;
 }
 #mainnav ul ul li:last-child > a,
 #mainnav ul ul li.last > a {
