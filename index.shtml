@@ -22,24 +22,24 @@
             <li class="nav_float"><a href='index.shtml?about'><span>About</span></a></li>
             <li class="nav_float" class='active has-sub'><a href='#'><span>Lectures</span></a>
                 <ul>
-                    <li class='has-sub'><a href='index.shtml?lecture1'><span>Week 01</span></a>
+                    <li class='has-sub'><a href='index.shtml?lecture1'><span>One</span></a>
                         <ul>
                             <li><a href='index.shtml?lecture1'><span>Notes</span></a></li>
                         </ul>
                     </li>
-                    <li class='has-sub'><a href='index.shtml?lecture2'><span>Week 02</span></a>
+                    <li class='has-sub'><a href='index.shtml?lecture2'><span>Two</span></a>
                         <ul>
                            <li><a href='index.shtml?lecture2'><span>Notes</span></a></li>
                            <li><a href='index.shtml?homework2'><span>Homework</span></a></li>
                         </ul>
                      </li>
-                     <li class='has-sub'><a href='index.shtml?lecture3'><span>Week 03</span></a>
+                     <li class='has-sub'><a href='index.shtml?lecture3'><span>Three</span></a>
                         <ul>
                            <li><a href='index.shtml?lecture3'><span>Notes</span></a></li>
                            <li><a href='index.shtml?homework3'><span>Homework</span></a></li>
                         </ul>
                      </li>
-                     <li class='has-sub'><a href='index.shtml?lecture4'><span>Week 04</span></a>
+                     <li class='has-sub'><a href='index.shtml?lecture4'><span>Four</span></a>
                         <ul>
                             <li><a href='index.shtml?lecture4'><span>Notes</span></a></li>
                             <li class='last'><a href='index.shtml?exercise4'><span>Exercises</span></a></li>
@@ -76,9 +76,9 @@
                 <div id="footer_lecture" class="footer_float">
                     <h3>Lectures</h3>
                     <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a href="">One</a></li>
+                        <li><a href="">Two</a></li>
+                        <li><a href="">Three</a></li>
                     </ul>
                 </div>
                 <div id="footer_blog" class="footer_float">

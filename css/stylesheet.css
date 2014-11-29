@@ -93,7 +93,15 @@ form input {
 #footer {
 	width: 80%;
 	margin: 0 auto;
-	background-color: lightblue;
+}
+
+footer h3{
+	font-family: "Avenir", "Futura", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #515151;
+	text-transform: uppercase;
+	margin: 0;
 }
 
 .footer_float {
@@ -109,4 +117,11 @@ form input {
 
 #footer li {
 	list-style-type: none;
+	line-height: 1.4;
+	font-family: "Avenir", "Futura", sans-serif;
+	font-size: 13px;
+}
+
+#footer li a{
+	color: #515151;	
 }
