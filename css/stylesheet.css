@@ -95,15 +95,20 @@ form input {
 	margin: 1% auto;
 }
 
-#content .post-title a{
+#content .page-title a{
+	color: #AC4142;
+}
+
+#content a:hover{
+	color: #9A9A9A;
+}
+
+#content .page-title{
+	margin: 0;
 	font-family: "Avenir", "Futura", sans-serif;
 	color: #AC4142;
 	font-size: 30px;
 	font-weight: 400;
-}
-
-#content .post-title{
-	margin: 0;
 }
 
 #content .post-date{
