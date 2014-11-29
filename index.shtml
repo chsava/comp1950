@@ -20,7 +20,7 @@
 	<div id="mainnav">
         <ul>
             <li class="nav_float"><a href='index.shtml?about'><span>About</span></a></li>
-            <li class="nav_float" class='active has-sub'><a href='#'><span>Lectures</span></a>
+            <li class='active has-sub nav_float'><a href='#'><span>Lectures</span></a>
                 <ul>
                     <li class='has-sub'><a href='index.shtml?lecture1'><span>One</span></a>
                         <ul>
@@ -49,7 +49,7 @@
             </li>
             <li class="nav_float"><a href='#'><span>Blog</span></a></li>
             <li class="nav_float"><a href='#'><span>Forum</span></a></li>
-            <li class="nav_float" class='active has-sub'><a href='#'><span>Students</span></a>
+            <li class='active has-sub nav_float'><a href='#'><span>Students</span></a>
               <ul>
                  <li><a href='index.shtml?student_pages'><span>Student Pages</span></a></li>
                  <li><a href='index.shtml?project'><span>Project</span></a></li>
@@ -65,7 +65,7 @@
 			<!--#include file="home.html" -->
 			<!--#endif -->
 		</div>
-		<footer id="footer">
+		<footer>
                 <div id="footer_about" class="footer_float">
                     <h3>About</h3>
                     <ul>

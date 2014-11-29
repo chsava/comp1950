@@ -90,9 +90,11 @@ form input {
 
 /* FOOTER */
 
-#footer {
+footer {
 	width: 80%;
 	margin: 0 auto;
+	border-top: 1px solid #9A9A9A;
+	border-bottom: 1px solid #9A9A9A;
 }
 
 footer h3{
@@ -110,18 +112,18 @@ footer h3{
 	text-align: center;
 }
 
-#footer ul {
+footer ul {
 	margin: 0;
 	padding: 0;
 }
 
-#footer li {
+footer li {
 	list-style-type: none;
 	line-height: 1.4;
 	font-family: "Avenir", "Futura", sans-serif;
 	font-size: 13px;
 }
 
-#footer li a{
+footer li a{
 	color: #515151;	
 }
