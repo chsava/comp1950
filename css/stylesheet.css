@@ -84,8 +84,44 @@ form input {
 
 #content {
 	width: 80%;
-	margin: 0 auto;
-	/*background: salmon;*/
+	margin: 5% auto;
+	font-family: "Verdana", sans-serif;
+	font-size: 16px;
+	color: #515151;
+	line-height: 1.5;
+}
+
+#content p{
+	margin: 1% auto;
+}
+
+#content .post-title a{
+	font-family: "Avenir", "Futura", sans-serif;
+	color: #AC4142;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#content .post-title{
+	margin: 0;
+}
+
+#content .post-date{
+	font-family: "Avenir", "Futura", sans-serif;
+	color: #9A9A9A;
+	font-size: 17px;
+}
+
+#content h2{
+	font-family: "Avenir", "Futura", sans-serif;
+	color: #303030;
+	font-size: 18px;
+	margin: 5px auto;
+}
+
+#content p{
+	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 /* FOOTER */
@@ -102,6 +138,7 @@ footer h3{
 	font-weight: bold;
 	color: #515151;
 	text-transform: uppercase;
+	margin: 15px 0 5px 0;
 }
 
 .footer_float {
