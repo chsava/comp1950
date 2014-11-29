@@ -94,7 +94,6 @@ footer {
 	width: 80%;
 	margin: 0 auto;
 	border-top: 1px solid #9A9A9A;
-	border-bottom: 1px solid #9A9A9A;
 }
 
 footer h3{
@@ -103,7 +102,6 @@ footer h3{
 	font-weight: bold;
 	color: #515151;
 	text-transform: uppercase;
-	margin: 0;
 }
 
 .footer_float {
@@ -125,5 +123,20 @@ footer li {
 }
 
 footer li a{
+	color: #515151;	
+}
+
+#footer_lecture{
+	margin-bottom: 2%;
+}
+
+footer #copyright{
+	clear: both;
+	border-top: 1px solid #9A9A9A;
+	padding: 10px;
+	text-align: center;
+	margin-top: 10%;
+	font-family: "Avenir", "Futura", sans-serif;
+	font-size: 13px;
 	color: #515151;	
 }

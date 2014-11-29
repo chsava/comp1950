@@ -97,6 +97,7 @@
                         <li><a href="#">Student Pages</a></li>
                     </ul>
                 </div>
+		<p id="copyright">Copyright &copy; 2014 Alistair Calder</p>
         </footer>
 	</div> <!-- END OF CONTAINER -->
 </body>
