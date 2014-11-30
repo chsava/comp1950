@@ -7,7 +7,6 @@ body {
 
 			/* LINKS */
 
-
 a:link {
 	text-decoration: none;
 	color: #000;
@@ -25,7 +24,6 @@ a:visited {
 
 #header {
 	width: 100%;
-	background-color: red;
 	height: 178px;
 	background-image: url(../img/background.jpg);
 	background-repeat: no-repeat;
@@ -36,7 +34,6 @@ a:visited {
 form input {
 	float: right;
 	margin-right: 10%;
-	/*background-color: blue;*/
 }
 
 #header h1 {
@@ -45,7 +42,6 @@ form input {
 	position: relative;
  	top: 50%;
  	transform: translateY(-50%);
- 	/*background-color: green;*/
 }
 
 /* NAVIGATION */
@@ -71,7 +67,6 @@ form input {
 #content {
 	width: 80%;
 	margin: 0 auto;
-	/*background: salmon;*/
 }
 
 /* FOOTER */
