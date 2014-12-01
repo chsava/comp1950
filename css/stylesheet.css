@@ -31,6 +31,17 @@ a:visited {
 	text-align: right;
 }
 
+p#validator{
+    float: left;
+    margin-left: 10%;
+}
+
+img#validator{
+    border: 0;
+    width: 88px;
+    height: 30px;
+}
+
 form input {
 	float: right;
 	margin-right: 10%;

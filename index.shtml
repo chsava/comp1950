@@ -11,6 +11,14 @@
 <body>
 	<div id="container">	
 		<header id="header">
+        <p id="validator">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img class='validator' src="img/vcss.gif" alt="Valid CSS!" />
+            </a>
+            <a href="http://validator.w3.org/check?uri=referer">
+                    <img class='validator' src="img/vhtml5.jpg" alt="Valid HTML5!" />
+            </a>
+        </p>
         <h1>COMP 1950 Web Development 2</h1>
         <form action="#">
                 <input type="text" placeholder="&#128270;search">
